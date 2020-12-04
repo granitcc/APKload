@@ -7,7 +7,8 @@ export const FooterContainer =styled.footer`
         font-family:helvetica;
    
 @media screen and (max-width: 1032px){
-    background-color:#0a1450;
+    transistion:0.3s all ease;
+    background:#0a2454;
 }
 @media screen and (max-width: 800px){
     display:flex;
