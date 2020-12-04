@@ -1,0 +1,31 @@
+.sociall{
+    display: flex;
+    flex-flow:nowrap;
+}
+#sizeFA{
+    font-size:50px;
+    margin:2px;
+   
+}
+.alllcon{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight:bold;
+    align-items: center;
+}
+.allcon{
+    background-color: none;
+    display:flex;
+    width:20rem;
+    padding-right:3rem;
+    flex-direction: column;
+}
+.sociall{
+    display: flex;
+    flex-direction: row;
+    flex-flow:nowrap;
+    justify-content: space-between;
+    align-items: center;
+}

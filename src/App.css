@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin-right: 0;
+    margin:0;
+    padding:0;
+  
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+#root{overflow-x:hidden;}
+
+
+
+body{
+    background-color:whitesmoke;
+}
+    a:link,
+    a:hover,
+    a:visited,
+    a:active
+     {
+        background-color: none;
+        text-decoration: none;
+        
+      }
+
+i 
+{
+    margin-right: 5px;
+}
+hr { background-color: rgb(240, 233, 233); height: 0.5px; border: 0; }
+  
+
+.hr 
+{
+    color:white;
+}
+.Divee
+ {
+
+    display: block;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 
+{
+   
+    font-size:17px;
+    cursor:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#a
+{
+    padding-top:50px;
+    padding-right:30px;
+    text-decoration: none;
+    color:#fff;
+    font-size:2rem;
+    background-color: none;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+#a:hover
+{
+    cursor:pointer;
+    color:rgb(21, 255, 0);
+     font-size:2.3rem;
+    -webkit-transform: translate( 0px, -5px);
 }
 
-.App-link {
-  color: #61dafb;
+#sizeFA
+{
+    font-size:2rem;
+    display:flex;
+    cursor:none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left_box{
+padding-right: 7rem;
 }
