@@ -486,13 +486,19 @@ function GamesPage() {
   const [price, setPrice] = useState({min:0,max:1500});
   const [category,setCategory] = useState("all");
    let sortedGame = bands
+
   // useEffect(() => {
     const sortArray = (type) => {
       console.log(category)
-
       if (category !== "all"){
       sortedGame=bands.filter(band=>band.category===category)
+
       }
+      console.log(price)
+
+      sortedGame  = sortedGame.filter(d=>d.price>=price.min && d.price <=price.max)
+
+       
       console.log(sortedGame)
       if (orderBy==="asc")
        sortedGame = sortedGame.sort((a,b)=>a[type] > b[type] ? 1 :-1)
@@ -653,11 +659,11 @@ function GamesPage() {
               <label  className="edit">Price</label>
               <div className="games-right-sort-column-price">
              {/* <select onChange={(e) => setPrice(e.target.value)}> */}
-                <input type="number"  value={price.min} placeholder="$20"  onChange={e => setPrice(e.target.value)}   />
+                <input type="number"  value={price.min} placeholder="20$"  onChange={e => setPrice({...price,min:e.target.value})}   />
             {/* //  </select> */}
 
               {/* <select onChange={(e) => setPrice(e.target.value)}> */}
-              <input type="number"  value={price.max} placeholder="$1500"  onChange={e => setPrice(e.target.value)} />
+              <input type="number"  value={price.max}   placeholder="1500$"  onChange={e => setPrice({...price,max:e.target.value})} />
 
               {/* </select> */}
               </div>
