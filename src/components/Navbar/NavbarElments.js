@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     position:fixed;
     width:100%;
     overflow-x:hidden;
-    background: linear-gradient(90deg, rgba(64,225,244,1) 13%, rgba(45,116,163,1) 28%, rgba(14,68,99,1) 59%, rgba(6,29,57,1) 96%);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
     position:0;
     top:0;
     z-index:10;
-    box-shadow: 0 20px 20px -15px rgba(38, 179, 215, 100); 
+    box-shadow: 0 11px 10px -15px rgba(38, 179, 215, 100); 
 
 @media screen and (max-width: 1034px) {
     transistion:0.3s all ease;
@@ -135,7 +135,7 @@ export const NavItems = styled.li `
 `;
 //NavScroll
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
    color:#fff;
    display:flex;
    align-items:center;

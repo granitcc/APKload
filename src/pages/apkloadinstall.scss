@@ -1,0 +1,139 @@
+.apkloadinstall{
+    
+        width:100%;
+        background-image: url(../components/images/how.jpg);
+    background-size: auto 100%;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+     display:flex;
+     flex-direction: column;
+     align-items:  center;
+     padding-top:6rem;
+     padding-bottom:26rem;
+
+     position: relative;
+@media screen and (max-width:847px){
+position:relative;
+     padding-bottom:4rem;}
+
+     .first{
+         color: white;
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         padding:1rem;
+         justify-content: center;
+         
+     }
+      .firsttext{
+          font-size:2rem;
+          padding-top:1rem;
+          padding-bottom:1rem;
+              }
+              .secondtext{
+                  font-size:1.3rem;
+              }
+   .second{
+       flex-direction: column;
+       
+    }
+     .second1{
+       display:flex;
+       flex-direction: row;
+       color:white;
+       padding: 1rem;
+       
+   }
+   .pp{
+       padding-left:1rem;
+       font-weight: 100;
+       font-size:15px;
+       
+   }
+
+.third{
+    background-color:white;
+    display:flex;
+    margin-top:3rem;
+    flex-direction:row;
+    width:80%;
+    padding:1rem;
+    border-radius: 5px;
+    border:none;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top:2rem;
+    padding-bottom:2rem;
+    @media screen and (max-width:847px){
+        flex-direction: column;
+}}
+.qrtext{
+    
+    display:flex;
+    flex-direction: row;
+    @media screen and (max-width:847px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.hej{
+    font-size: 16px;
+    color:rgb(116, 114, 114);
+    font-weight: bold;
+    @media screen and (max-width:847px){
+       font-size:18px;
+       padding-bottom: 2rem;
+    }
+}
+.text{
+    
+    font-size: 16px;
+    color:rgb(116, 114, 114);
+    font-weight: bold;
+    width:60%;
+    padding-top:1.3rem;
+    padding-left:0.5rem;
+    @media screen and (max-width:847px){
+       width:100%;
+       padding-top:0rem;
+       padding-left:2rem;
+       padding-right:2rem;
+    }
+}
+.mid{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:20px; 
+    padding-right:4rem;
+    @media screen and (max-width:847px){
+        flex-direction: row;
+       padding:2rem;
+       font-size:30px;
+    }
+}
+.ps{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    @media screen and (max-width:847px){
+      padding-left:2rem;
+      padding-right:2rem;
+    }
+}
+.button{
+    padding-left:1.3rem;
+    padding-right:1.3rem;
+font-weight: 600;
+white-space:nowrap;
+background-color: rgb(53, 163, 53);
+@media screen and (max-width:847px){
+   width:100%;
+ }
+}
+}

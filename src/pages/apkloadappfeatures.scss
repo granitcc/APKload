@@ -1,0 +1,794 @@
+.apkloadapp{
+    .first{
+        padding-top:0rem;
+        
+        background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
+width:100%;
+height:40rem;
+display:flex;
+justify-content: space-around;
+@media screen and (max-width:1034px){
+    height:auto;
+flex-direction: column;
+justify-content: space-around;
+padding-right: 9rem;;
+align-items: center;
+overflow: hidden;
+padding-top:0rem;
+
+}
+@media screen and (max-width:500px){
+    height:auto;
+    padding-top:3rem;
+    padding-top:0rem;
+
+    
+    }
+
+
+
+    }
+    .firstcontent{
+        padding-top:6rem;
+        margin-top:0rem;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left:10rem;
+        color:white;
+        height:auto;
+        @media screen and (max-width:1012px){
+    
+           margin-top: 3rem;
+            }
+            @media screen and (max-width:400px){
+                margin-top: 0rem;
+                padding-right: 1rem;
+                 }
+    }
+
+ .links{
+     display: flex;
+     padding:0.8rem;
+     justify-content: space-around;
+     white-space: nowrap;
+     @media screen and (max-width:414px){
+       font-size: 12px;
+
+
+        }
+
+ #li{
+     padding:0rem 1rem 0rem 1rem;
+ }
+    }
+ .apkinstall2{
+    margin-right:-4rem;
+    height: auto;
+    max-width:30%;
+    
+    @media screen and (max-width:1009px){
+        margin-left:10rem;
+
+
+        }
+        @media screen and (max-width:414px){
+            width: 45%;
+            max-width:none;
+    
+            }
+     
+}
+ .apkinstall1{
+     margin-right: -3.5rem;
+     height: auto;
+     max-width:40%;
+     @media screen and (max-width:414px){
+        width: 55%;
+        max-width:none;
+
+        }
+
+}
+.apkinstall3{
+    height: auto;
+    max-width:30%;
+    @media screen and (max-width:414px){
+        width: 45%;
+        max-width:none;
+
+        }
+
+}
+.firsttwo{
+    padding-top:20rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0rem;
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-flow:nowrap;
+    height:auto;
+    @media screen and (max-width:1030px){
+        padding-top:1rem;
+        padding-left: 0rem;
+
+
+        }
+        @media screen and (max-width:500px){
+            padding-top:0rem;
+            justify-content: space-around;
+
+            padding-left: 0rem;
+
+    
+    
+            }
+       
+        
+        
+
+        
+    
+}
+.second{
+    padding:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:1000px){
+    
+        padding:1rem;
+        
+         }
+    
+.secondfirst{
+    padding-top:3rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}    
+}
+
+.secondicon{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top:3rem;
+    margin:auto;
+    width:100%;
+    @media screen and (max-width:665px){
+        
+        flex-wrap: wrap;
+         }
+
+    .secondiconcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width:22%;
+        @media screen and (max-width:665px){
+        width:40%;
+             }
+    }
+    
+
+}
+.he{
+    color:rgb(150, 145, 145);
+    font-size:14px;
+    font-weight: bold;
+    
+    align-items: center;
+    text-align: center;
+}
+.hee{
+    font-size:2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+
+}
+.g1{
+    padding-bottom: 2rem;
+   
+}
+.gg1{
+    padding-bottom: 2rem;
+   color:rgb(46, 44, 44);
+   font-size: 1rem;
+   text-align: center;
+   @media screen and (max-width:400px){
+    padding-bottom: 1.4rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+}
+.ggg1{
+    text-align: center;
+    color:rgb(150, 145, 145);
+    font-size:15px;
+    font-weight:400;
+    line-height: 1.5rem;
+    align-items: baseline;
+   text-align: center;
+   @media screen and (max-width:400px){
+       text-align: center;
+       padding-bottom: 2rem;
+   }
+}
+.third{
+    background-color: rgba(145, 233, 255, 0.267);
+    .thirdcontent{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+   @media screen and (max-width:1000px)
+   {
+    padding-left: 5%;
+    padding-right: 5%;
+   }  
+   @media screen and (max-width:707px)
+   {
+    padding-left: 0%;
+    padding-right: 0%;
+   }    
+   @media screen and (max-width:440px)
+   {
+       flex-direction: column-reverse;
+   }    
+
+}
+    .rigt{
+        width:50%;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:440px)
+        {
+            padding-top:1rem;
+            display: flex;
+            text-align: center;
+        justify-content: center;
+        flex-direction: column;
+            width:100%;
+        }    
+
+    }
+    .rigti{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:500px)
+        {
+            width:80%;
+        }    
+        
+           
+        
+
+    }
+    .button{
+        margin-top:1rem;
+        width:70%;
+    }
+    .redi{
+        padding-bottom: 1rem;
+        @media screen and (max-width:500px){
+            font-size: 1rem;;
+        }
+    }
+    .re{
+        color:rgb(150, 145, 145);
+
+    }
+    
+    .eko{
+        @media screen and (max-width:500px){
+            font-size: 1rem;;
+        }
+    }
+}
+
+.fourth{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: 20%;
+    padding-right: 35%;
+    @media screen and (max-width:1100px){
+       padding-left: 15%;
+        padding-right: 30%;
+    }
+    @media screen and (max-width:868px){
+        padding-left: 10%;
+         padding-right: 25%;
+     }
+     @media screen and (max-width:780px){
+        padding-left: 13%;
+         padding-right: 50%;
+     }
+     @media screen and (max-width:500px){
+        padding:0 20% 0 20%;
+        margin-right: auto;
+        margin-left:auto;
+  
+     }
+}
+
+.apkinstall1crop{
+    @media screen and (max-width:720px){
+        width:200px;
+        height:auto;
+        margin-left:2rem;
+        margin-right:2rem;
+    }
+  
+}
+.thirdcontentt{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    @media screen and (max-width:500px)
+    {    
+        flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      padding-left:2rem;
+    }
+    @media screen and (max-width:386px)
+    {    
+       
+      padding:0;
+      margin-left: auto;
+      margin: auto;
+    }
+        
+    
+    }
+    .side{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        @media screen and (max-width:500px){
+        padding-right:100%;
+        margin-right: auto;
+        margin-left: auto;
+        
+         }
+    }
+    .side1{
+        position: absolute;
+        @media screen and (max-width:868px){
+            width:200px;
+         }
+         @media screen and (max-width:780px){
+            width:170px;
+         }
+         @media screen and (max-width:580px){
+            
+            width:150px;
+         }
+         @media screen and (max-width:500px){
+            left:-140px;
+         }
+    }
+    .side{
+       left:100px;
+       @media screen and (max-width:868px){
+        width:200px;
+     }
+     @media screen and (max-width:780px){
+        width:170px;
+     }
+     @media screen and (max-width:580px){
+        width:150px;
+     }
+     @media screen and (max-width:400px){
+        right:-100px;
+     }
+    }
+    .re{
+        padding-bottom: 1rem;
+        color:rgb(150, 145, 145);
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;
+            
+        }
+    }
+    .redii{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        white-space: nowrap;
+        @media screen and (max-width:500px){
+            font-size: 1rem;;
+            padding-left: 1.6rem;
+        }
+        
+    }
+    .fifth{
+        display: flex;
+        background-color: rgba(145, 233, 255, 0.267);
+
+    }
+    .fifthcontent{
+        display:flex;
+    align-items: center;
+    justify-content:space-between;
+
+    padding-left: 15%;
+    padding-right: 15%;
+     
+         
+    @media screen and (max-width:941px){
+        padding-left: 10%;
+        padding-right: 10%;
+     }
+     @media screen and (max-width:841px){
+        padding-left: 5%;
+        padding-right: 5%;
+     }
+    
+     @media screen and (max-width:440px){
+        padding-left: 1%;
+        padding-right: 1%;
+        flex-direction: column-reverse;
+     }
+    .ree{
+        padding-bottom: 2rem;
+    }   
+    
+    .goright{
+        width:45%;
+        @media screen and (max-width:814px){
+            width:100%;
+         }
+         @media screen and (max-width:440px)
+         {
+             padding-top:1rem;
+             display: flex;
+             text-align: center;
+         justify-content: center;
+         flex-direction: column;
+             width:100%;
+         }   
+         .button{
+             width:50%;
+             margin-left:auto;
+             margin-right: auto;
+
+         }
+    }
+    
+    }
+    .buttton{
+        margin-left: 1.5rem;
+        background-color: rgb(32, 238, 32);
+        color:white;
+        padding:0.6rem 0.3rem 0.6rem 0.3rem;
+        border:none;
+        border-radius: 5px;
+        margin-top:1rem;
+        
+    }
+    .rediii{
+        padding-bottom: 2rem;
+        color:rgb(150, 145, 145);
+        @media screen and (max-width:414px){
+            
+         }
+
+    }
+    .fifthimg{
+        display:flex;
+        flex-direction: row;
+        @media screen and (max-width:1026px){
+           height:auto;
+        }
+      
+    }
+
+    .ez{
+        padding-top:3rem;
+        height:380px;
+        @media screen and (max-width:1026px){
+            width:150px;
+            height:380px;
+        }
+        @media screen and (max-width:658px){
+            width:100px;
+            height:280px;
+        }
+        
+    }
+    .ez1{
+        @media screen and (max-width:1026px){
+            width:200px;
+            height: auto;
+        }
+        @media screen and (max-width:658px){
+            width:150px;
+            height:310px;
+        }
+        
+    }
+    .sixone{
+        @media screen and(max-width:500px){
+            font-size:1rem;
+          }  
+
+    }
+    .sixonee{
+        @media screen and(max-width:500px){
+            font-size:1rem;
+            padding-bottom:1rem;
+          }  
+    }
+    .sixwto{
+        color:rgb(150, 145, 145);
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;;
+            padding:1rem 15% 1rem 15%;
+            text-align: center;
+           
+        }
+    }
+   
+    .rek{
+        color:rgb(150, 145, 145);
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;
+            padding-bottom:1rem;
+            padding-top:1rem;
+            text-align: center;
+            padding-left:0.1rem;
+            padding-right:0.1rem;
+        } }
+    .sixtext{
+        width:50%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:500px)
+        {
+            width:100%;
+            align-items: center;
+            padding-top:1rem;
+        }    
+    }
+    .endd{
+        @media screen and(max-width:774px){
+            width:200px;
+            height:auto;
+        }
+    }
+    .sixcontent{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-left:20%;
+        padding-right:20%;
+        justify-content: space-between;
+        @media screen and(max-width:1024px){
+            padding-left:10%;
+            padding-right:10%;
+        }
+        @media screen and(max-width:819px){
+            padding-left:5%;
+            padding-right:5%;
+        }
+        @media screen and(max-width:414px){
+            padding-left:0%;
+            padding-right:0%;
+            flex-direction: column-reverse;
+
+        }
+        .ree{
+            padding-bottom: 2rem;
+        }
+        .rediii{
+            padding-bottom: 2rem;
+        }
+    }
+    .rewivs{
+        display: flex;
+        flex-direction: column;
+        padding-left:20%;
+        padding-right:20%;
+        justify-content: center;
+        background-color: rgba(145, 233, 255, 0.267);
+        padding-top:1rem;
+        @media screen and(max-width:1024px){
+            padding-left:15%;
+            padding-right:15%;
+        }
+        @media screen and(max-width:600px){
+            padding-left:5%;
+            padding-right:5%;
+        }
+        @media screen and(max-width:450px){
+            padding-left:2%;
+            padding-right:2%;
+            margin:auto;
+        }
+    }
+    .rewivs1{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+        border:1px solid rgba(128, 123, 123, 0.37);
+        background-color: whitesmoke;
+        padding:0.7rem 0.2rem 0.7rem 0.2rem;
+        border-radius:5px;
+        
+
+    }
+    .rewivs2{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding:0.7rem 0.2rem 0.7rem 0.2rem;
+        
+
+    }
+    .all-rewi{
+        border:2px solid rgb(17, 211, 17);
+        margin-top:1rem;
+        margin-bottom:1rem;
+        border-radius: 5px;
+    }
+    .all-rewii{
+        border:2px solid rgb(137, 139, 137);
+        margin-top:1rem;
+        margin-bottom:1rem;
+        border-radius: 5px;
+    }
+    .reww{
+        display: flex;
+        padding-left:1rem;
+        flex-direction: row;
+
+    }
+    .rewtext{
+        display: flex;
+        flex-direction: column;
+    }
+    .texttx{
+        color:rgb(150, 145, 145);
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;;
+        }
+    }
+   
+    .textttx{
+        color:rgb(150, 145, 145);
+        padding-bottom:1rem;
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    }
+    .ttextttx{
+        color:rgb(150, 145, 145);
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 0 15% 2rem 15% ;
+        }
+    }
+    .pes{
+        padding-bottom: 1rem;
+    }
+   
+   
+    .img{
+        padding-bottom: 1rem;
+       @media screen and (max-width:414px){
+        padding-bottom: 0.5rem;
+padding-top:0rem;
+       width:60px;
+        height: auto; 
+    }
+
+    }
+    .btn{
+        @media screen and (max-width:414px){
+            padding-bottom: 0.4rem;
+    padding-top:0.4rem;
+    font-size:12px;
+    margin-bottom:0rem;
+           
+        }
+    }
+    #there{
+        padding-top:1rem;
+        padding-left:1rem;
+        padding-bottom:1rem;
+        color:rgb(104, 102, 102);
+        font-size:13px;
+        font-weight: 400;
+    }
+    #theree{
+        padding-left:1rem;
+    }
+    #theeree{
+        padding-left:1rem;
+
+    }
+    .endcomments{
+          background:rgba(216, 206, 206, 0.527);
+          border-radius: 5px;
+          border:none;
+          padding:1rem;
+          margin:1rem;
+          font-size:13px;
+          font-weight:bold;
+          color:rgb(146, 141, 141);
+          #space{
+      padding-bottom:0.7rem;
+  }
+    }
+    .graybold{
+        font-weight:bold;
+        font-size:14px;
+        color:rgb(97, 95, 95);
+        padding-left:1rem;
+   
+   
+       }
+       #name{
+           font-size:13px;
+           font-weight:bold;
+           color:rgb(59, 57, 57);
+
+       }
+       #date{
+        font-size:12px;
+        color:rgb(146, 141, 141);
+
+    }
+    .pezes{
+        padding-bottom: 1rem;
+        
+        @media screen and(max-width:400px){
+            padding-bottom: 0.6rem;
+            font-size: 18px;
+            font-weight: 100;
+        }
+            
+        }
+        .ekoo{
+            @media screen and(max-width:500px){
+              font-size:1rem;
+            }  
+        }
+        .rei{
+            @media screen and(max-width:500px){
+                font-size:1rem;
+                padding-bottom:1rem;
+              }  
+        }
+        .rrei{
+            color:rgb(150, 145, 145);
+
+        @media screen and (max-width:500px){
+            font-size: 0.9rem;;
+            padding-bottom:1rem;
+        }
+        }
+    
+}

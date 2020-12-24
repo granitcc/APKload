@@ -8,23 +8,26 @@ SideBtnWrap,
 SidebarRoute,
 SidebarLink
 }from './SidebarElements'
+import './sidebar.scss'
 
 
 const Sidebar = ({isOpen,toggle}) => {
     return (
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <SidebarContainer isOpen={isOpen}  >
             <Icon onClick={toggle}>
         <CloseIcon />
             </Icon>
             <SidebarMenu>
-                <SidebarLink to="games" onClick={toggle}><i class="fas fa-gamepad"> </i>GAMES</SidebarLink>
-                <SidebarLink to="apps" onClick={toggle}><i class="fas fa-th"> </i> APPS</SidebarLink>
-                <SidebarLink to="topic" onClick={toggle}><i class="fas fa-bars"> </i>TOPIC</SidebarLink>
-                <SidebarLink to="products" onClick={toggle}><i class="fas fa-cube"> </i>PRODUCTS</SidebarLink>
+                <SidebarLink> <input type="text" placeholder="Search.." className="searchbox" /> </SidebarLink>
+                <SidebarLink to="/games" onClick={toggle}><i class="fas fa-gamepad"> </i>GAMES</SidebarLink>
+                <SidebarLink to="/app" onClick={toggle}><i class="fas fa-th"> </i> APPS</SidebarLink>
+                <SidebarLink to="/apkloadappfeatures" onClick={toggle}><i class="fas fa-bars"> </i>TOPIC</SidebarLink>
+                <SidebarLink to="/install" onClick={toggle}><i class="fas fa-cube"> </i>PRODUCTS</SidebarLink>
+                
                 
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to='/signin'>Sign In
+                <SidebarRoute to='/signin'>Sign In  <i class="fas fa-sign-in-alt"></i>
                 </SidebarRoute>
 
             </SideBtnWrap>

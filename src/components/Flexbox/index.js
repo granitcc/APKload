@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './flexbox.scss';
 import empires from "../images/empires.jpg"
 import empires1 from "../images/empires1.jpg"
@@ -16,23 +22,27 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { FaAndroid  } from 'react-icons/fa';
 import { FaStar  } from 'react-icons/fa';
+import android from '../images/android.png'
+import adnroidblue from '../images/adnroidblue.png'
+
+
 function Flexbox () {
 
 return (<>
  <div className="allinone">
              <div className="slideri">
-                <Carousel   autoPlay interval="5000" showThumbs={false} transitionTime="5000"> 
+                <Carousel  autoPlay reapet="4000" showThumbs={false} transitionTime="5000"> 
                    
                     <div>
-                        <img src={Dragon}/>
+                        <img src={Dragon} id="imgsrcdragon"/>
                         <p className="legend">Sword Master Story</p>
                     </div>
                     <div>
-                        <img src={Dragon} />
+                        <img src={Dragon} id="imgsrcdragon" />
                         <p className="legend">Sword Master Story</p>
                     </div>
                     <div>
-                        <img src={Dragon} />
+                        <img src={Dragon} id="imgsrcdragon" />
                         <p className="legend">Sword Master Story</p>
                     </div>
                 </Carousel> </div>   
@@ -43,7 +53,7 @@ return (<>
            
               <div className="texte">
               <span className="and">
-              <FaAndroid /></span>
+              <img src={adnroidblue} width="100px" id="immgmg" /></span>
                 <span className="roid">
                 APKLoad
                 <span id="star"><FaStar/></span><span id="rr">8.7</span><br/>
@@ -68,7 +78,7 @@ return (<>
         <div className="icon"> <svg><rect rx="50" ry="50" ></rect></svg> <img src={reddit} alt="" className="icc"/></div>
         <div className="icon"> <svg><rect rx="50" ry="50" ></rect></svg><img src={iinn} alt="" className="icc"/></div>
         <div className="icon"> <svg><rect rx="50" ry="50" ></rect></svg><img src={youtube} alt="" className="icc"/></div>
-        <div className="icon"> <svg><rect rx="50" ry="50" ></rect></svg><img src={instagram} alt="" className="icc"/></div>
+        <div className="icon" id="heki"> <svg><rect rx="50" ry="50" ></rect></svg><img src={instagram} alt="" className="icc" id="heki"/></div>
     </div>
  </div>
             
@@ -86,7 +96,8 @@ return (<>
                          <i class="fas fa-angle-double-right" />
                            </span></span> 
                            <span id="More">More<span id="more"><i class="fas fa-angle-double-right"></i></span></span></span> 
-                        <article className="card card--wide">
+                      
+                        <Link to='/gamesdetail' className="card card--wide">
                          
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
@@ -99,9 +110,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>    
                         
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail'  className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -113,9 +124,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail'  className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -127,9 +138,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail'  className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -141,9 +152,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail'  className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -155,9 +166,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail' className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -169,9 +180,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail' className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -183,9 +194,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail'  className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -197,9 +208,9 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
-                        <article className="card card--wide">
+                        <Link to='/gamesdetail' className="card card--wide">
                          <div className="card__media">
                            <img src={empires} alt="Card image" />
                          </div>
@@ -211,7 +222,7 @@ return (<>
                            </div>
                         </header>
                         </div>
-                        </article>
+                        </Link>
 
                         <article className="card card--wide">
                          <div className="card__media">
@@ -859,13 +870,7 @@ return (<>
                            </span></span> 
                            <span id="More">More<span id="more"><i class="fas fa-angle-double-right"></i></span></span></span> 
                        <div className="con">
-                       <div className="containerr">
-                         <img src={pubg} id="immages" />
-                         <div className="containerr text-block">
-                         
-                         Top 10 Games For Android
-
-                         </div></div>
+                       
                          <div className="containerr">
                          <img src={cats} id="immages" />
                          <div className="containerr text-block">
@@ -878,7 +883,15 @@ return (<>
                          <div className="containerr text-block">
                          
                          Top New Relases For Android
-                         </div></div></div>
+                         </div></div>
+                         <div className="containerr">
+                         <img src={cats} id="immages" />
+                         <div className="containerr text-block">
+                         
+                         Top 10 Games For Android
+
+                         </div></div>
+                         </div>
                 
                 </div>      
                               
@@ -1178,7 +1191,7 @@ return (<>
                     <i class="fas fa-angle-double-right"></i>
                      </span></span></span>
                     <div class="flex">
-                    <ul >
+                    <ul className="padd">
   <li  >  <img src={empires} className="h"/>
 <span className="g cool-link"> Adventure</span></li><br/>
 <li>  <img src={empires} className="h"/>
@@ -1202,7 +1215,7 @@ return (<>
 
  
 </ul>
-<ul>
+<ul className="padd">
 <li>  <img src={empires} className="h"/>
 <span className="g  cool-link"> Entairment</span></li><br/>
 <li>  <img src={empires} className="h"/>

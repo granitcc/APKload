@@ -14,7 +14,7 @@ export const SidebarContainer = styled.aside`
     top:0;
     left:0;
     transition:0.45s ease-in-out;
-    opacity:${({isOpen}) =>(isOpen ? '95%' : '0')};
+    opacity:${({isOpen}) =>(isOpen ? '99%' : '0')};
     top:${({isOpen}) => (isOpen ? '0' :'-100%')};
 
 
@@ -24,6 +24,7 @@ export const CloseIcon = styled(FaTimes)`
 `
 export const Icon =styled.div`
     position:absolute;
+
     top:1.2rem;
     right:1.5rem;
     background:transparent;
@@ -42,22 +43,36 @@ export const SidebarMenu = styled.div`
     text-align:center;
 
 @media screen and (max-width:480px){
+    grid-template-rows:repeat(6,90px);
+}
+@media screen and (max-width:360px){
     grid-template-rows:repeat(6,70px);
 }
 
 `;
 
-export const SidebarLink =styled.div`
+export const SidebarLink =styled(LinkR)`
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:1.6rem;
+    font-size:2.0rem;
+    margin-top:3rem;
     text-decoration:none;
     list-style:none;
-    transition:0.4s ease-in-out;
     text-decoration:none;
+    padding-top:1rem;
     color:#fff;
     cursor:pointer;
+    animation: 1.2s ease-in 1s 1 reverse both running slidein;
+    @keyframes slidein {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+    @media screen and (max-width:360px){
+    grid-template-rows:repeat(6,70px);
+    font-size:1.3rem;
+
+}
 
 &:hover {
     background: rgb(58,81,180);
@@ -68,19 +83,26 @@ export const SidebarLink =styled.div`
 export const SideBtnWrap = styled.div`
     display:flex;
     justify-content:center;
+    
+
   
     
 
 `
 export const SidebarRoute =styled(LinkR)`
     border-radius:50px;
-    background:#01bf71;
     white-space:nowrap;
     padding:16px 64px;
     background:#fff;
     font-size:16px;
     outline:none;
-    border:none;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    background: rgb(46, 240, 46);
+    align-items:center;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:1rem;
     cursor:pointer;
     transition:all 0.3s ease-in-out; 
     text-decoration:none;

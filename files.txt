@@ -1,0 +1,402 @@
+footer index.js//
+
+
+import React from 'react'
+import './footer.scss'
+import languages from '../../languages/languages'
+import {useContext} from 'react'
+import {DataLocaleStorage} from '../../localestorage'
+import {localecontext} from '../../context/localcontext'
+import android from '../images/android.png'
+
+import {
+    FooterContainer,
+    FooterWrap,
+    FooterLinkContainer,
+    FooterLinkWrapper,
+    FooterLinkItems,
+    FooterLinkTitle,
+    FooterLink,
+    SocialMedia,
+    SocialMediaWrap,
+    SocialLogo,
+    SocialIcons,
+    SocailIconLink,
+    FooterLinks,
+    WebsiteRights,
+    WebsiteRightsNumber
+} from './FooterElements'
+import {
+    FaFacebook,
+    FaInstagram,
+    FaTwitter,
+    FaYoutube,
+    FaAndroid,
+    FaPhone
+
+} from 'react-icons/fa';
+const Footer = () => {
+    
+    const {
+        locale,setLocale
+    } = useContext (localecontext)
+    
+    return (
+        <FooterContainer>
+            <FooterWrap>
+                 <FooterLinkContainer>
+                     <FooterLinkWrapper>
+                         <FooterLinks>
+<div className="allcon">
+    <div className="alllcon">
+    <div className="apklogo">
+    <img src={android} width="50" />
+    </div>
+    <div className="apktext">
+    Apk Load
+    </div>
+    </div>
+    <div className="appktext">
+    <p className="tet">
+Android Package is the package file format
+used b the Android operating system ,and a 
+number of other Android-based operating  
+systems for distributin and instailion of
+mobile apps, mobile games and middleware.</p>
+    </div>
+    <div className="sociall"> <br/> <br/>
+              <a href="/" id="a"><FaFacebook /></a>
+              <a href="#" id="a"><FaTwitter/></a>
+              <a href="/" id="a"><FaInstagram /></a>
+              <a href="/" id="a"><FaYoutube /></a>
+            </div>
+    
+</div>
+
+
+                {/*}     <div className="left box left_box"><br/>
+                     <h2> <FaAndroid id="sizeFA"/>Apk Load</h2><br/><div className="content">
+            <p>
+Android Package is the package file format<br/>
+used b the Android operating system ,and a  <br/>
+number of other Android-based operating  <br/>
+systems for distributin and instailion of <br/>
+mobile apps, mobile games and middleware.</p>
+<div className="sociall"> <br/> <br/>
+              <a href="/" id="a"><FaFacebook /></a>
+              <a href="#" id="a"><FaTwitter/></a>
+              <a href="/" id="a"><FaInstagram /></a>
+              <a href="/" id="a"><FaYoutube /></a>
+            </div>
+</div>
+    </div> */} </FooterLinks>
+
+                         <FooterLinkItems>
+                             <FooterLinkTitle> COMPANY    </FooterLinkTitle>
+                                 <FooterLink to="/aboutus">About us </FooterLink>
+                                 <br/>
+                                 <FooterLink to="why-apkload">Why ApkLoad </FooterLink>
+                                 <br/>
+                                 <FooterLink to="careers">Careers </FooterLink>
+                                 <br/>
+                                 <FooterLink to="blog">Blog </FooterLink>
+                                 <br/>
+                                 <br/>
+                                 <br/>
+                                 <br/>
+                                 <FooterLink to="legal-infromation">Legal Information </FooterLink>
+                         </FooterLinkItems>
+
+                         <FooterLinkItems>
+                             <FooterLinkTitle> OUR PRODUCTS   </FooterLinkTitle>
+                        
+                                 <FooterLink to="/submitapk">ApkLoad Apps </FooterLink>
+                                 <br/>
+                                 <FooterLink to="/install">ApkLoad Games</FooterLink>
+                                 <br/>
+                                 <FooterLink to="/payment">AppCoins Wallet</FooterLink>
+                                 <br/>
+                                 <FooterLink to="/apkloadappfeatures">APKload App Features </FooterLink>
+                                 <br/>
+                                 <br/>
+                                 <br/>
+                                 <br/>
+                                 <FooterLink to="cookie-policy">Cookie Policy </FooterLink>
+                         </FooterLinkItems>
+
+                         <FooterLinkItems>
+                             <FooterLinkTitle> OUR SERVICE   </FooterLinkTitle>
+                                 <FooterLink to="co-brand">Co Brand</FooterLink>
+                                 <br/>
+                                 <FooterLink to="developers">Developer </FooterLink>
+                                 <br/>
+                                 <FooterLink to="appcoins-protocol">AppCoins Protocol </FooterLink>
+                                 <br/>
+                                 <FooterLink to="/contactus">Contact Us </FooterLink>
+                                 <br/>
+                                 <FooterLink> </FooterLink>
+                               
+                                 
+                                 <br/>
+                                 <br/>
+                                 <br/>
+                                
+                                 
+                                 <FooterLink to="privacy-policy">Privacy Policy</FooterLink>
+                         </FooterLinkItems>
+                     </FooterLinkWrapper>
+                 </FooterLinkContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to='/'>
+                            Apk Load
+                        </SocialLogo>
+    
+                   
+                  {/* <SocialIcons>
+                       <SocailIconLink href="/" traget="_blank" aria-label="Facebook">
+                           <FaFacebook />
+                       </SocailIconLink>
+
+                       <SocailIconLink href="/" traget="_blank" aria-label="Instagram">
+                           <FaInstagram />
+                       </SocailIconLink>
+
+                       <SocailIconLink href="/" traget="_blank" aria-label="Youtube">
+                           <FaYoutube />
+                       </SocailIconLink>
+
+                       <SocailIconLink href="/" traget="_blank" aria-label="Twitter">
+                       <FaTwitter />
+                       </SocailIconLink>
+
+                  </SocialIcons> */}
+                  
+
+                    </SocialMediaWrap>
+                    <hr  style={{
+                   color: '#fff',
+                   backgroundColor: '#fff',
+                   height: 1.5,
+                   borderColor : '#fff' }}/>
+                    <br/><br/>
+        <WebsiteRights>ApkLoad  {new Date().getFullYear()} ©  All rights reserved.</WebsiteRights>
+        <WebsiteRightsNumber><FaPhone/> +383(0) 45 111-555</WebsiteRightsNumber>
+                
+                
+    </SocialMedia>
+<div className="select">
+    <select  value={locale}onChange={(event) => {setLocale(event.target.value); DataLocaleStorage.setLocale(event.target.value) }}>
+     <option value={languages["en-us"].value}>
+          {languages["en-us"].label}
+     </option>
+     <option value={languages["sq-al"].value}>
+     {languages["sq-al"].label}
+
+     </option>
+
+    </select></div>
+          </FooterWrap>
+</FooterContainer>
+        
+    )
+}
+
+export default Footer
+
+////
+footerelementstyled//
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+
+export const FooterContainer =styled.footer`
+//background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
+        // background-color:rgb(31, 27, 27);
+background:#211e1e;
+        font-family:helvetica;
+        padding-top:3rem;
+        justify-content:center;
+   
+@media screen and (max-width: 1032px){
+    transistion:0.3s all ease;
+    background:#0a2454;
+}
+@media screen and (max-width: 800px){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+`;
+
+export const FooterWrap = styled.div`
+    padding:8px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    max-width:1100px;
+    margin:0 auto;
+    @media screen and (max-width: 800px){
+    padding-right:1rem;
+    padding-left:1rem;
+    margin:0px;
+    font-family:helvetica;
+
+
+}
+
+`
+export const FooterLinkContainer = styled.div`
+    display: flex;
+    justify-content:center;
+    font-family:helvetica;
+
+@media screen and (max-width:1033) {
+    
+    padding-top:22px;
+}
+
+`
+export const FooterLinkWrapper =styled.div`
+    display:flex;
+@media screen and (max-width:1033px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left:82px;
+    
+    
+}
+
+
+`
+
+export const FooterLinkItems = styled.div`
+
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+margin:26px;
+align-items:center;
+width:200px;
+box-sizing:border-box;
+font-family:helvetica;
+color:#fff;
+@media screen and (max-width:420px) {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+`
+export const FooterLinkTitle =styled.h1`
+    font-size:19px;
+    margin-bottom:16px;
+`
+export const FooterLink =styled(Link)`
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    display:flex;
+    
+
+&:hover {
+    color:white;
+    font-weight:bold;
+    transition:0.1s ease-out;
+    font-size:15.5px;
+    -webkit-transform: translate( 0px, -2px);
+    
+}
+`
+export const FooterLinks =styled(Link)`
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    display:flex;
+`
+export const SocialMedia =styled.section `
+    max-width:1000px;
+    width:100%;
+`
+export const SocialMediaWrap = styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin:40px auto 0 auto;
+
+@media screen and (max-width:520px)
+{
+    flex-direction:column;
+
+}
+
+`
+export const SocialLogo =styled(Link)`
+    color:#fff;
+    justify-self:start;
+    cursor:pointer; 
+    text-decoration:none;
+    font-size:1.5rem;
+    display:flex;
+    align-items:center;
+    margin-bottom:16px;
+    font-weight:bold;
+`
+
+export const WebsiteRights = styled.small`
+    color:#fff;
+    margin-bottom:16px;
+    position:center;
+    align-items:center;
+    
+@media screen and (max-width:400px)
+{
+margin-left:2.5rem;
+}
+@media screen and (max-width:350px)
+{
+margin-left:2.5rem;
+}
+    
+`
+export const WebsiteRightsNumber = styled.small`
+    color:#fff;
+    margin-bottom:16px;
+    position:right;
+    float:right;
+    align-items:right;
+    @media screen and (max-width:400px)
+{
+   margin-right:1rem;
+
+}
+@media screen and (max-width:400px)
+{
+    
+   margin-right:1rem;
+
+}
+@media screen and (max-width:350px)
+{
+    margin-top:0.3rem;
+   margin-right:2rem;
+
+}
+
+
+`
+
+export const SocialIcons =styled.div`
+    display:flex; 
+    justify-content:space-between;
+    align-items:center;
+    width:240px;
+`
+export const SocailIconLink = styled.a`
+color:#fff;
+font-size:24px;
+`
+

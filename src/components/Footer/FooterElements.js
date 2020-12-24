@@ -2,17 +2,21 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const FooterContainer =styled.footer`
-        background: linear-gradient(90deg, rgba(64,225,244,1) 8%, rgba(45,116,163,1) 28%, rgba(14,68,99,1) 59%, rgba(6,29,57,1) 96%);
-
+//background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
+        // background-color:rgb(31, 27, 27);
+background:#211e1e;
         font-family:helvetica;
+        padding-top:3rem;
+        justify-content:center;
    
 @media screen and (max-width: 1032px){
-    background-color:#0a1450;
+    transistion:0.3s all ease;
+    background:#0a2454;
 }
 @media screen and (max-width: 800px){
     display:flex;
     justify-content:center;
-    align-items:cen ter;
+    align-items:center;
 }
 
 
@@ -24,7 +28,6 @@ export const FooterWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    max-width:1100px;
     margin:0 auto;
     @media screen and (max-width: 800px){
     padding-right:1rem;
@@ -39,6 +42,7 @@ export const FooterWrap = styled.div`
 export const FooterLinkContainer = styled.div`
     display: flex;
     justify-content:center;
+    align-items:center;
     font-family:helvetica;
 
 @media screen and (max-width:1033) {
@@ -52,7 +56,8 @@ export const FooterLinkWrapper =styled.div`
 @media screen and (max-width:1033px) {
         display: flex;
         flex-wrap: wrap;
-        padding-left:82px;
+        align-items:center;
+        justify-content:center;
     
     
 }
@@ -61,12 +66,13 @@ export const FooterLinkWrapper =styled.div`
 `
 
 export const FooterLinkItems = styled.div`
+
 display:flex;
 flex-direction:column;
 align-items:flex-start;
-margin:16px;
-align-items:left;
-width:160px;
+margin:26px;
+align-items:center;
+width:200px;
 box-sizing:border-box;
 font-family:helvetica;
 color:#fff;
@@ -89,11 +95,11 @@ export const FooterLink =styled(Link)`
     
 
 &:hover {
-    color:black;
+    color:white;
     font-weight:bold;
-    transition:0.3s ease-out;
-    font-size:17px;
-    -webkit-transform: translate( 0px, -5px);
+    transition:0.1s ease-out;
+    font-size:15.5px;
+    -webkit-transform: translate( 0px, -2px);
     
 }
 `
@@ -141,11 +147,12 @@ export const WebsiteRights = styled.small`
     
 @media screen and (max-width:400px)
 {
-margin-left:2.5rem;
+    display:flex;
+    gap:10px;
+    flex-direction:column;
 }
 @media screen and (max-width:350px)
 {
-margin-left:2.5rem;
 }
     
 `

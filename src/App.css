@@ -2,9 +2,6 @@
     box-sizing: border-box;
     margin-right: 0;
     margin:0;
-    padding:0;
-  
-    
 }
 
 
@@ -12,16 +9,19 @@
 #root{overflow-x:hidden;}
 
 
-
+::placeholder { /* Most modern browsers support this now. */
+    color:    rgb(146, 143, 143);
+ }
 body{
     background-color:whitesmoke;
 }
+
     a:link,
     a:hover,
     a:visited,
     a:active
      {
-        background-color: none;
+       color: none;
         text-decoration: none;
         
       }

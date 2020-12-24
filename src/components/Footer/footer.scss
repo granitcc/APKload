@@ -1,7 +1,4 @@
-.sociall{
-    display: flex;
-    flex-flow:nowrap;
-}
+
 #sizeFA{
     font-size:50px;
     margin:2px;
@@ -10,19 +7,42 @@
 .alllcon{
     display:flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-around;
     font-size: 1.5rem;
-    font-weight:bold;
     align-items: center;
+    margin-right:0.6rem;
+
+    @media screen and(max-width:450px){
+        margin-right:2.7rem;
+    }
+}
+.select{
+    margin-bottom:2rem;
 }
 .allcon{
+    padding-top:0.5rem;
     background-color: none;
     display:flex;
     width:20rem;
-    padding-right:3rem;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin-left:5rem;
+
+    @media screen and(max-width:1091px){
+        margin-left:0rem;
+    }
+    @media screen and(max-width:450px){
+        margin-left:0rem;
+        text-align: center;
+    }
 }
+.tet{
+        
+    line-height: 1.9rem;
+    }
 .sociall{
+    padding-top:0rem;
     display: flex;
     flex-direction: row;
     flex-flow:nowrap;

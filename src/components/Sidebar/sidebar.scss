@@ -1,0 +1,21 @@
+.searchbox{
+    margin-top:2rem;
+    width:80%;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    border:2px solid white;
+    border-radius: 20px;
+    background:#0a1450;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+  
+}
+::placeholder{
+    color:white; 
+    align-items: center;
+    justify-content: center;
+    border:none; 
+    
+}

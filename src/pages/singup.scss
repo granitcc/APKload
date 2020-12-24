@@ -1,0 +1,75 @@
+#blue{
+    color:rgb(8, 86, 117);
+}
+.bttn{
+    border-width:px;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left:1.5rem;
+    padding-right: 1.5rem;;
+    border-radius: 8px;
+    font-size: 17px;
+    border-color: white;
+    background-color:transparent;
+    color:white;
+    border-style: solid;
+    white-space: nowrap;
+
+    &:hover{
+        cursor: pointer;
+    
+    }
+}
+.iconss{
+    padding-top:1.3rem;
+    display: flex;
+    flex-direction: column;
+    padding-left:0rem;
+    justify-content: center;
+    align-items: stretch center;
+    
+@media screen and (max-width:662px){
+    padding-left:1rem;
+}
+    
+}
+.one
+{
+    padding-top:1rem;
+    display: flex;
+    align-items: center;
+}
+.two
+{
+    padding-top:1rem;
+    align-items: center;
+    display: flex;
+}
+.three{
+    padding-top:1rem;
+align-items: center;
+    display: flex;
+}
+.size{
+    font-size: 1.6rem;
+}
+#ppp{
+    padding-left:1.7rem;
+    font-weight:bold;
+}
+#p{
+    padding-left:1.8rem;
+    font-weight:bold;
+}
+#pp{
+    padding-left:1.3rem;
+    font-weight:bold;
+}
+.texxt{
+ padding-bottom: 1rem;
+}
+.texkt{
+    display:flex;
+    flex-direction:column;
+    white-space: nowrap;
+}

@@ -1,5 +1,6 @@
 
 import {React }from 'react'
+import {FormattedMessage} from 'react-intl'
 import {
    Nav,
    NavbarContainer,
@@ -16,6 +17,8 @@ import {
     FaBars,
     FaAndroid
 } from 'react-icons/fa';
+import android from '../images/android.png'
+import './navBar.scss'
 
 const Navbar = ({ toggle }) => {
 
@@ -25,15 +28,24 @@ const Navbar = ({ toggle }) => {
 
             
     <NavbarContainer>
-        <NavLogo to='/'><FaAndroid /> Apk Load</NavLogo>
+       
+    <div class="search-box">
+   <input type="text" name="" class="search-txt" placeholder="Search..."/>
+   <a class="search-btn">
+    <i class="far fa-search"></i>
+   </a>
+  </div>
+
+        <NavLogo to='/'><img src={android} width="50" />
+         Apk Load</NavLogo>
          <MobileIcon onClick={toggle}>
              <FaBars />
          </MobileIcon>
          <NavMenu>
-             <NavItems><NavLinks to='games'> <i class="fas fa-gamepad"> </i>GAMES    </NavLinks></NavItems>
-             <NavItems><NavLinks to='apps'><i class="fas fa-th"> </i> APPS </NavLinks></NavItems>
-             <NavItems><NavLinks to='topic'><i class="fas fa-bars"> </i> TOPIC</NavLinks></NavItems>
-             <NavItems><NavLinks to='products'><i class="fas fa-cube"> </i>PRODUCTS</NavLinks></NavItems>
+    <NavItems><NavLinks to='/games'> <i class="fas fa-gamepad"> </i><FormattedMessage id="NavBar.Menu.games"/>    </NavLinks></NavItems>
+             <NavItems><NavLinks to='/app'><i class="fas fa-th"> </i> APPS </NavLinks></NavItems>
+             <NavItems><NavLinks to='/apkloadappfeatures'><i class="fas fa-bars"> </i> TOPIC</NavLinks></NavItems>
+             <NavItems><NavLinks to='/install'><i class="fas fa-cube"> </i>PRODUCTS</NavLinks></NavItems>
             {/*  <NavItems><NavLinks to='signup'>SIGN UP </NavLinks></NavItems> */}
             </NavMenu> 
          <NavBtn>
