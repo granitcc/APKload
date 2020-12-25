@@ -21,6 +21,7 @@ import GamesDetailPage from './pages/gamesdetail';
 import GamesPage from './pages/games.js';
 import AppPages from './pages/app';
 import BlogPages from './pages/blog';
+import ScrollToTop from './ScrollToTop'
 
 
 
@@ -32,12 +33,12 @@ function App() {
     <localecontext.Provider value={{locale,setLocale}} >
 
     <Router>
-
+    <ScrollToTop />
        <Switch>
          <Route path="/" component={Home} exact />
          <Route path="/signin" component={SigninPage} exact />
          <Route path="/singup" component={SingupPage} exact />
-         <Route path="/contactus" component={ContactusPage} exact />
+         <Route path="/contactus" component={ContactusPage} exact  />
          <Route path="/aboutus" component={AboutusPage} exact />
          <Route path="/submitapk" component={SubmitapkPage} exact />
          <Route path="/payment" component={PaymentPage} exact />
