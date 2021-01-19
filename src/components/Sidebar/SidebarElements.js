@@ -74,10 +74,7 @@ export const SidebarLink =styled(LinkR)`
 
 }
 
-&:hover {
-    background: rgb(58,81,180);
-    transition:0.1s ease-in-out;
-}
+
 `
 
 export const SideBtnWrap = styled.div`

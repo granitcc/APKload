@@ -6,15 +6,15 @@ import {Link as LinkS} from 'react-scroll'
 
 //margin-top:-80px;
 export const Nav = styled.nav`
-   
+   padding-left:1%;
     position:fixed;
     width:100%;
-    overflow-x:hidden;
+    overflow:none;
     background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:1.3rem;
+    font-size:1rem;
     position:0;
     top:0;
     z-index:10;
@@ -27,12 +27,16 @@ export const Nav = styled.nav`
 `;
 export const NavbarContainer = styled.div`
    display:flex;
-   justify-content:space-between;
+   justify-content:center;
    height:80px;
-   z-index:1;
+   z-index:2;
    width:100%;
-   padding:0 24px;
-   max-width:1100px;
+   padding:0px;
+  /* max-width:1100px;  */
+   @media screen and (max-width: 1034px) {
+    justify-content:space-between;
+
+}
 
 
 `;
@@ -40,17 +44,15 @@ export const NavLogo = styled(LinkR)`
    color:#fff;
    justify-self:flex-start;
    cursor:pointer;
-   font-size:1.8rem;
+   font-size:1.5rem;
    display:flex;
    align-items:center;
-   margin-left:24px;
    font-weight:Bold;
    text-decoration:none;
 
    text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   overflow: hidden;
-  line-height: 0.75;
 
   &:hover {
     color:rgb(4, 255, 58);
@@ -87,7 +89,7 @@ export const NavLogo = styled(LinkR)`
 
 &:hover {
     -webkit-transform: translate( 0px, -4px);
-    font-size:2rem;
+    font-size:1.3rem;
 }
 @media screen and (max-width: 600px) {
    font-size:1.5rem;
@@ -117,21 +119,27 @@ export const NavMenu = styled.ul `
    align-items:center;
    list-style:none;
    text-align:center;
-margin-right:-72px;
 
 @media screen and (max-width:1034px) {
     display:none;
 }
 
 `;
+
+
 export const NavItems = styled.li `
-   height:80px;
+   height:0px;
    padding:2rem;
 &:hover {
     border-bottom:5px solid rgb(4, 255, 58);
     
   transition: width .3s;
 }
+`;
+export const NavItemss = styled.li `
+
+  
+
 `;
 //NavScroll
 
@@ -166,13 +174,15 @@ export const NavBtn = styled.nav `
     min-width: 150px;
 
     &::after {
-        content: "\f2f6";
+        content: "\f2f6 Login";
+       
         font-family: "Font Awesome 5 Pro";
-        font-weight: 400;
+        font-weight: 500;
         position: absolute;
-        left: 80%;
+        left: 60%;
         top: 54%;
         right: 0;
+        font-size:20px;
         bottom: 0;
         opacity: 0;
         transform: translate(-50%, -50%);
@@ -186,9 +196,10 @@ export const NavBtn = styled.nav `
         box-shadow: 2px 6px 15px #0000ff61;
         padding: 1.5rem 3rem 1.5rem 1.5rem;
         color: #ffffff;
-        font-size:1.5em;
+        font-size:1em;
 
         &::after {
+
             opacity: 1;
             transition: all 0.5s;
             color: #ffffff;

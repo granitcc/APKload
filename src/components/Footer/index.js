@@ -145,10 +145,10 @@ const Footer = () => {
           <br />
           <WebsiteRights>
             ApkLoad {new Date().getFullYear()} © All rights reserved.
-         
-          <WebsiteRightsNumber>
-            <FaPhone /> +383(0) 45 111-555
-          </WebsiteRightsNumber> </WebsiteRights>
+            <WebsiteRightsNumber>
+              <FaPhone /> +383(0) 45 111-555
+            </WebsiteRightsNumber>{" "}
+          </WebsiteRights>
         </SocialMedia>
         <div className="select">
           <select

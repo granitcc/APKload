@@ -1,4 +1,7 @@
 {
     "NavBar.Menu.games" : "GAMES",
+    "NavBar.Menu.apps" : "APPS",
+    "NavBar.Menu.topic" : "TOPIC",
+    "NavBar.Menu.products" : "PRODUCT",
     "Install.first.paragraph": "Apkload install is an APK installer software for android developed by APKload team."
 }

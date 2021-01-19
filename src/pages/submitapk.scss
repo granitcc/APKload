@@ -1,180 +1,170 @@
-.submit-apk{
-    width:100%;
-    margin-top:-5rem;
+.submit-apk {
+  width: 100%;
+  margin-top: -5rem;
+  height: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 1%,
+    rgba(19, 146, 217, 1) 24%,
+    rgba(9, 9, 121, 1) 58%,
+    rgba(9, 9, 121, 1) 90%
+  );
+  padding-top: 5rem;
+  padding-bottom: 14rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 837px) {
+    flex-direction: column;
+    padding-top: 0rem;
+    width: 100%;
+    padding-bottom: 34rem;
+  }
+  @media screen and (max-width: 651px) {
+    flex-direction: column;
+    padding-top: 0rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .left {
+    width: 45%;
+    padding: 2rem;
+    color: white;
     height: auto;
-    background: linear-gradient(90deg, rgba(0,212,255,1) 1%, rgba(19,146,217,1) 24%, rgba(9,9,121,1) 58%, rgba(9,9,121,1) 90%);
-    padding-top:5rem;
-    padding-bottom:14rem;
-padding-left:5rem;
-padding-right:5rem;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-@media screen and (max-width:837px){
+    display: flex;
     flex-direction: column;
-    padding-top:0rem;
-    width:100%;
-    padding-bottom:34rem;
-
-}
-@media screen and (max-width:651px){
-    flex-direction: column;
-    padding-top:0rem;
-    width:100%;
-    padding-left:3rem;
-padding-right:3rem;
-
-}
-@media screen and (max-width:450px){
-    
-    width:100%;
-    padding-left:0.5rem;
-padding-right:0.5rem;
-
-}
-   
-.left{
-         width:45%;
-         padding:2rem;
-         color:white;
-         height:auto;
-       display:flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-      background:transparent;
-      border:transparent;
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-      border:none;
-      box-shadow: none;
-      @media screen and (max-width:837px){
-          width:100%;
-          margin-left:auto;
-          margin-right:auto;
-          padding-bottom: 0rem;
-      }
-    }
-    .head{
-        font-size:2rem;
-        font-weight: bold;   
-    }
-    #p{
-        line-height: 1.5rem;
-        font-size:13px;
-        font-weight: 100;
-        padding-bottom: 2rem;
-    }
-    #pp{
-        line-height: 1.5rem;
-        font-size:13px;
-        font-weight: 100;
-
-    }
-}
-.submit-apk{
-    
-    .right{
-        width:50%;
-        background:transparent;
-        border:none;
-        border:none;
-      box-shadow: none;
-      padding-top: 5rem;
-      border-radius:5px;
-      @media screen and (max-width:837px){
-        width:100%;
-        margin-left:auto;
-        margin-right:auto;
-        padding-top:0rem;
-        
-    }
-    @media screen and (max-width:651px){
-    flex-direction: column;
-    padding-top:21rem;
-    width:100%;
-    
-
-}
-   
-    }
-    .icon {
-        position: absolute;
-      padding: 15px;
-      justify-content: center;
-      text-align: left;
-      background: none;
-      color:rgb(8, 86, 117);
-      min-width: 50px;
-      text-align: center;
-    }
-    .btt{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #color{
-        color:rgb(8, 86, 117);    }
-    .bt{
-        width:100%;
-       
-        background-color: rgb(46, 240, 46);
-    height:2.5rem;
-    color:white;
-    border-radius: 8px;
-    border:none;
-    &:hover{
-        cursor: pointer;
-        box-shadow: 0.1px 0.1px 4px rgb(196, 194, 194);
-    }
-
-    }
-    .data1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
-    padding:1rem;
+    background: transparent;
+    border: transparent;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border: none;
+    box-shadow: none;
+    @media screen and (max-width: 837px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 0rem;
     }
+  }
+  .head {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  #p {
+    line-height: 1.5rem;
+    font-size: 13px;
+    font-weight: 100;
+    padding-bottom: 2rem;
+  }
+  #pp {
+    line-height: 1.5rem;
+    font-size: 13px;
+    font-weight: 100;
+  }
+}
+.submit-apk {
+  .right {
+    width: 50%;
+    background: transparent;
+    border: none;
+    border: none;
+    box-shadow: none;
+    padding-top: 5rem;
+    border-radius: 5px;
+    @media screen and (max-width: 837px) {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0rem;
+    }
+    @media screen and (max-width: 651px) {
+      flex-direction: column;
+      padding-top: 21rem;
+      width: 100%;
+    }
+  }
+  .icon {
+    position: absolute;
+    padding: 15px;
+    justify-content: center;
+    text-align: left;
+    background: none;
+    color: rgb(8, 86, 117);
+    min-width: 50px;
+    text-align: center;
+  }
+  .btt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #color {
+    color: rgb(8, 86, 117);
+  }
+  .bt {
+    width: 100%;
 
-    .haj{
-        width:70px;
-        height:100px;
-        
-        margin-bottom:2rem;
+    background-color: rgb(46, 240, 46);
+    height: 2.5rem;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0.1px 0.1px 4px rgb(196, 194, 194);
     }
-    .con{
-        padding-bottom: 3rem;
-    }
-   #txt{
-       color:rgb(168, 163, 163);
-       font-size:14px;
-       display:flex;
-       align-items: left;
-   }
-   .containere
-   {
+  }
+  .data1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .haj {
+    width: 70px;
+    height: 100px;
+
+    margin-bottom: 2rem;
+  }
+  .con {
+    padding-bottom: 3rem;
+  }
+  #txt {
+    color: rgb(168, 163, 163);
+    font-size: 14px;
+    display: flex;
+    align-items: left;
+  }
+  .containere {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
     background-color: white;
     border-radius: 20px;
-    border:none;
+    border: none;
     font-family: cursive;
-  
-   
-    @media screen and (max-width:508px){
-        width:100%;
-        padding:1rem;
-       
-     }
-     @media screen and (max-width:408px){
-        width:100%;
-        padding:0.5rem;
-       
-     }
-   }
-   
-}
 
+    @media screen and (max-width: 508px) {
+      width: 100%;
+      padding: 1rem;
+    }
+    @media screen and (max-width: 408px) {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+}

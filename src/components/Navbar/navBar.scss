@@ -1,59 +1,150 @@
-.search-box {
-    position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translate(-0%, -50%);
-    background: #000000e0;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    @media screen and(max-width:1026px){
-        display: none;
-    }
-   
-   }
-   
-   .search-box:hover > .search-txt {
-    width: 200px;
-    padding: 0 6px;
-    
-  
-   }
-   
-   .search-box:hover > .search-btn {
-    color: black;
-    
-   }
-   
-   .search-btn {
-    color: #e84118;
-    float: right;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #2f3640;
+
+.search{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    cursor: pointer;
-   }
-   
-   .search-btn > i {
-    font-size: 30px;
-    color: white;
-   }
-   
-   .search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 0px;
-    font-weight: bold;
-   }
+    height:30px;
+    
+    .sizee{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border:1px solid rgba(216, 210, 210, 0.705);
+        padding-top:0.2rem;
+        padding-bottom:0.25rem;
+        font-size: 16px;
+        color:white;
+        font-weight: 500;
+        padding-left:0.3rem;
+        padding-right: 0.2rem;
+    }
+    .games-left-list-apps{
+    display: flex;
+    
+    flex-direction: column;
+    }
+    .games-left-list-games{
+        display: flex;
+        flex-direction: column;
+        }
+    ul {
+        
+        padding: 0;
+        list-style: none;
+        background: transparent;
+        
+        margin:0px;
+        display:flex;
+        align-items: left;
+        justify-content: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+        
+        
+
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+        color:black;
+       
+        
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        text-decoration: none;
+        color:black;
+    }
+    ul li a:hover {
+        color:black;
+        background:none;
+        
+    }
+    ul li ul.dropdown {
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+       
+        display: none;
+        position: absolute;
+        z-index: 10;
+        
+        
+        
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        margin-top:0.1rem;
+        padding-top:6rem;
+        display: flex; /* Display the dropdown */
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height:40rem;
+        background-color: white;
+        width:30rem;
+        justify-content: space-around;
+
+    }
+    
+    ul li ul.dropdown li {
+        display: block;
+    }
+    .sear{
+        width:auto;
+        background-color: rgba(29, 153, 190, 0.781);
+        border:1px solid rgba(216, 210, 210, 0.705);
+          
+      width:400px;
+        @media screen and (max-width:1440px){
+           width:350px;
+        }
+        @media screen and (max-width:1400px){
+            width:300px;
+        }
+        @media screen and (max-width:1376px){
+           width:250px;
+        }
+        @media screen and (max-width:1350px){
+           width:200px;
+        }
+        @media screen and (max-width:1236px){
+            width:150px;
+        }
+    }
+    .helli{
+        background-color: transparent;
+        border:1px solid rgba(216, 210, 210, 0.705);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        padding-bottom:2px;
+        font-size: 18px;
+    }
+    .far{
+        color:white;
+        font-weight: bold;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Style{
+        font-size:1.3rem;
+        color:black;
+
+    }
+     .all-ll{
+        background-color: transparent;
+        border:1px solid rgba(216, 210, 210, 0.705);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; 
+        padding-bottom:2px;
+        font-size: 15px;
+        height:30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color:white;
+        padding-left:0.3rem;
+        background-color: rgba(29, 153, 190, 0.781);
+    }
+}
+}

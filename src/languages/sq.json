@@ -1,4 +1,7 @@
 {
     "NavBar.Menu.games" : "LOJRA",
+    "NavBar.Menu.apps" : "APPS",
+    "NavBar.Menu.topic" : "TOPIC",
+    "NavBar.Menu.products" : "PRODUCT",
     "Install.first.paragraph": "Instalimi i ApkLoad"
 }
